@@ -4,11 +4,7 @@ import { defineConfig } from 'cypress';
 
 export default defineConfig({
   e2e: {
-    ...nxE2EPreset(__filename, {
-      cypressDir: 'src',
-      bundler: 'vite',
-      webServerCommands: { default: 'nx run app1:serve' },
-    }),
+    ...nxE2EPreset(__filename, { cypressDir: 'src', bundler: 'vite' }),
     baseUrl: 'http://localhost:4200',
   },
 });
