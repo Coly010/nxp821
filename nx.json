@@ -84,6 +84,15 @@
         "staticStorybookTargetName": "static-storybook",
         "testStorybookTargetName": "test-storybook"
       }
+    },
+    {
+      "plugin": "@nx/cypress/plugin",
+      "options": {
+        "targetName": "e2e",
+        "ciTargetName": "e2e-ci",
+        "openTargetName": "open-cypress",
+        "componentTestingTargetName": "component-test"
+      }
     }
   ]
 }
